@@ -1,0 +1,85 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FLAnimatedImage (1.0.12)
+  - JCore (1.2.1)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
+  - JSONModel (1.7.0)
+  - Masonry (1.0.2)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - SVProgressHUD (2.2.5)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+  - XHLaunchAd (3.9.7):
+    - FLAnimatedImage (~> 1.0.12)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JPush
+  - JSONModel (~> 1.7.0)
+  - Masonry (~> 1.0.1)
+  - SDWebImage (~> 4.2.3)
+  - SVProgressHUD
+  - "UITableView+FDTemplateLayoutCell"
+  - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI
+  - XHLaunchAd
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - FLAnimatedImage
+    - JCore
+    - JPush
+    - JSONModel
+    - Masonry
+    - SDWebImage
+    - SVProgressHUD
+    - "UITableView+FDTemplateLayoutCell"
+    - UMengUShare
+    - XHLaunchAd
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JCore: 467b5b56bd367c548f88ee1b5794d94ee07ab319
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
+
+PODFILE CHECKSUM: 0937816be590e29d684a4d34feb85302628c6a89
+
+COCOAPODS: 1.5.0

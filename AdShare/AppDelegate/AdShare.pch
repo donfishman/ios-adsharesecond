@@ -1,0 +1,212 @@
+//
+//  AdShare.pch
+//  AdShare
+//
+//  Created by ZLWL on 2018/4/23.
+//  Copyright © 2018年 YAND. All rights reserved.
+//
+
+#ifndef AdShare_pch
+#define AdShare_pch
+
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+
+//#import "KJPhotoBrowseController.h"
+//#import "UINavigationController+FDFullscreenPopGesture.h"
+//#import "SingletonManager.h"
+//#import "KJCollectionCell.h"
+//#import "KJPhotoBrowseView.h"
+
+#import "WXMoneyViewController.h"
+#import "BDPhoneViewController.h"
+#import "NewsBTableVCell.h"
+#import "LookSubmitVC.h"
+#import "LookModel.h"
+#import "IndexCell.h"
+#import "PersonalCenterController.h"
+#import "TaskDeatilsView.h"
+#import "PersonalLeftViewController.h"
+#import "PersonalMiddleViewController.h"
+#import "PersonalRightViewController.h"
+#import <SVProgressHUD.h>
+#import "EmptyStateView.h"
+#import "ShopViewController.h"
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+//#define WS(weakSelf)  __weak typeof (self) weakSelf = self;
+#define WS(weakSelf)  __weak typeof (self) weakSelf = self
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define XFHeadViewH 220
+#define XFHeadViewMinH 64
+#define XFTabBarH 44
+//系统库
+#import <AVFoundation/AVFoundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import <Foundation/Foundation.h>
+#import <JPUSHService.h>
+#import <WebKit/WebKit.h>
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import <UIImageView+WebCache.h>
+#import <JSONModel.h>
+#import "MoneyModel.h"
+#import "YXIgnoreHeaderTouchAndRecognizeSimultaneousTableView.h"
+#import "YXTabView.h"
+#import "YX.h"
+#import "WKWebViewController.h"
+#import "TaskViewController.h"
+#import "NewsViewController.h"
+#import "MineViewController.h"
+#import "DTabBarController.h"//tabbar
+#import "BaseTableViewCell.h"
+#import "BaseTableViewController.h"
+#import "BaseNavigationController.h"
+#import "GYZChooseCityController.h"//地址选择
+#import "BackSuggestViewController.h"//意见反馈
+#import "AboutMine.h"//关于我们
+#import "SearchViewController.h"//搜索
+#import "UpTaskInfoViewController.h"
+#import "TaskListModel.h"
+#import "NewsModel.h"
+#import "TypeModel.h"
+#import "OneViewController.h"
+#import "TwoViewController.h"
+#import "ThreeViewController.h"
+#import "AFNetworkTool.h"
+#import "TaskModel.h"
+#import "UIImageView+WebCache.h"
+#import "TimeLabel.h"
+#import "NewsAViewController.h"
+#import "NewsBViewController.h"
+#import "UIView+Frame.h"
+#import "NewsTableViewCell.h"
+#import "ShopTextTableViewCell.h"
+#import "ShopImageTableViewCell.h"
+#import "UserInfoViewController.h"
+#import "TaskTableViewCell.h"
+#import "TaskListTableViewCell.h"
+#import "TaskListViewController.h"
+#import "AFNetworkTool.h"
+#import "YANDTools.h"
+#import "TimeLabel.h"
+#import "ChangeNameViewController.h"
+#import "ChangePhoneViewController.h"
+#import "ChangeMMViewController.h"
+#import "ChangePhoneNewViewController.h"
+#import "FeeViewController.h"
+#import "CollectionTableViewCell.h"
+#import "CollectionViewController.h"
+#import "FeeTableViewCell.h"
+#import "BangCardViewController.h"
+#import "CardListViewController.h"
+#import "MoneyDetailViewController.h"
+#import "MoneyDetailTableViewCell.h"
+#import "MoneyInViewController.h"
+#import "MoneyOutViewController.h"
+#import "FindMMViewController.h"
+#import "RegisterViewController.h"
+#import "LoginViewController.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import <UShareUI/UShareUI.h>
+#import "UMShareViewController.h"
+#import "UMShareTypeViewController.h"
+#import "UMSBaseViewController.h"
+#import "UIView+ZF.h"
+#import "NSString+ZF.h"
+#import "MenuListView.h"
+#import "TaskModel.h"
+#import <AFNetworking.h>
+#import <JSONModel.h>
+#import <XHLaunchAd.h>
+#import "Network.h"
+#import "LaunchAdModel.h"
+
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SCW [UIScreen mainScreen].bounds.size.width
+#define SCH [UIScreen mainScreen].bounds.size.height
+
+#define kS_W [UIScreen mainScreen].bounds.size.width
+#define kS_H [UIScreen mainScreen].bounds.size.height
+#define KSW [UIScreen mainScreen].bounds.size.width
+#define KSH [UIScreen mainScreen].bounds.size.height
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+#define UserDefaults(a) [[NSUserDefaults standardUserDefaults]objectForKey:a]
+#define Width [UIScreen mainScreen].bounds.size.width/320.0
+#define Height [UIScreen mainScreen].bounds.size.height/568.0
+#define SView_WIDTH self.view.bounds.size.width
+#define SView_HEIGHT self.view.bounds.size.height
+#define KScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define KColor(r,g,b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+#define FloatColor(r,g,b) [UIColor colorWithRed:r green:g blue:b alpha:1.0]
+#define NavColor [UIColor colorWithRed:(251/255.0) green:(112/255.0) blue:(69/255.0) alpha:1.0]
+#define TintColor [UIColor colorWithRed:(102/255.0) green:(102/255.0) blue:(102/255.0) alpha:1.0]
+#define NavTitColor [UIColor colorWithRed:0.287072 green:0.625662 blue:1.0 alpha:1.0]
+#define FontSize(n) [UIFont systemFontOfSize:n]
+#define CColor(n) [UIColor n]
+
+#define TopViewH 479
+#define MiddleViewH 195
+#define BottomH 97
+#define TopTabBarH [global pxTopt:100]
+#define NaviBarH 64.0
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define kS_W [UIScreen mainScreen].bounds.size.width
+#define kS_H [UIScreen mainScreen].bounds.size.height
+
+#define KSW [UIScreen mainScreen].bounds.size.width
+#define KSH [UIScreen mainScreen].bounds.size.height
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+
+#define UserDefaults(a) [[NSUserDefaults standardUserDefaults]objectForKey:a]
+
+#define Width [UIScreen mainScreen].bounds.size.width/320.0
+#define Height [UIScreen mainScreen].bounds.size.height/568.0
+
+#define SView_WIDTH self.view.bounds.size.width
+#define SView_HEIGHT self.view.bounds.size.height
+
+#define KScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight  [UIScreen mainScreen].bounds.size.height
+
+#define KColor(r,g,b) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0]
+#define FloatColor(r,g,b) [UIColor colorWithRed:r green:g blue:b alpha:1.0]
+
+//#define NavColor [UIColor colorWithRed:0.3 green:0.3 blue:0.9 alpha:0.6]
+//#define NavColor [UIColor colorWithRed:0.287072 green:0.625662 blue:1.0 alpha:1.0]
+#define NavColor [UIColor colorWithRed:(251/255.0) green:(112/255.0) blue:(69/255.0) alpha:1.0]
+#define TintColor [UIColor colorWithRed:(102/255.0) green:(102/255.0) blue:(102/255.0) alpha:1.0]
+
+//#define NavTitColor [UIColor colorWithRed:0.699187 green:0.743717 blue:0.0668192 alpha:0.7]
+#define NavTitColor [UIColor colorWithRed:0.287072 green:0.625662 blue:1.0 alpha:1.0]
+
+
+#define FontSize(n) [UIFont systemFontOfSize:n]
+#define CColor(n) [UIColor n]
+
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:(a/1.0)]
+
+
+
+
+#define kSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define kSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
+
+#endif /* AdShare_pch */
+
